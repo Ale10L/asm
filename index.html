@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASM - Paran&aacute;</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="./images/Siglas-Logo.jpg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -77,7 +77,7 @@
         <!-- SEGUNDA OPCIÓN -->
         <section class="descripcion container my-5">
             <div class="text-center">
-                <img src="./images/Logo.jpg" class="mb-4">
+                <img src="./images/Logo.jpg" class="mb-4 img-fluid">
                 <p class="mb-5">En nuestra agencia, estamos comprometidos con el bienestar integral de las personas,
                     brindando un espacio de apoyo, contención y acompañamiento en su proceso de salud mental. Contamos
                     con un equipo interdisciplinario de profesionales altamente capacitados, que incluye psicólogas,
@@ -97,23 +97,23 @@
             </div>
 
             <div class="row text-center">
-                <div class="col-md-4 team-member">
-                    <img src="./images/1.jpg" alt="Leslie Alexander">
+                <div class="col-md-4 col-sm-12 team-member">
+                    <img src="./images/1.jpg" alt="Giuliana Gervasutti Trabajadora Social" class="img-fluid">
                     <h5>Giuliana Gervasutti</h5>
                     <p class="text-primary">Lic. Trabajo Social</p>
                 </div>
-                <div class="col-md-4 team-member">
-                    <img src="./images/2.jpg" alt="Michael Foster">
+                <div class="col-md-4 col-sm-12 team-member">
+                    <img src="./images/2.jpg" alt="Sandra Cislaghi Psicóloga" class="img-fluid">
                     <h5>Sandra Cislaghi</h5>
                     <p class="text-primary">Lic. Psicología</p>
                 </div>
-                <div class="col-md-4 team-member">
-                    <img src="./images/0.jpg" alt="Dries Vincent">
+                <div class="col-md-4 col-sm-12 team-member">
+                    <img src="./images/0.jpg" alt="Alejandro Ghiringhelli Desarrollador" class="img-fluid">
                     <h5>Alejandro Ghiringhelli</h5>
                     <p class="text-primary">Tec. Universitario en Programación</p>
                 </div>
-            </section>
-            <!-- 
+        </section>
+        <!-- 
             <div class="row text-center mt-4">
                 <div class="col-md-4 team-member">
                     <img src="./images/0.jpg" alt="Lindsay Walton">
@@ -173,9 +173,25 @@
                     escucharte y acompañarte en tu camino hacia una vida más saludable y equilibrada.
                 </p>
             </div>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            
         </section>
     </main>
-    <footer class="mt-3">
+    <!-- <footer class="mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-1">
@@ -206,7 +222,41 @@
                 </div>
             </div>
         </div>
+    </footer> -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Agencia de Salud Mental</h5>
+                    <p>
+                        Estamos comprometidos con brindarte el mejor apoyo en tu proceso de bienestar mental.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enlaces útiles</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#sobre-nosotros" class="text-dark">Sobre Nosotros</a></li>
+                        <li><a href="#experiencias" class="text-dark">Experiencias</a></li>
+                        <li><a href="#contacto" class="text-dark">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contacto</h5>
+                    <p>Email: contacto@asmparana.com</p>
+                    <p>Tel: 123-456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2024 ASM Paraná
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
