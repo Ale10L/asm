@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -15,10 +16,36 @@ body {
     min-height: 100vh;
     background-color: white;
     color: black;
+    font-family: "Amatic SC", sans-serif;
 }
 
 main {
     flex: 1;
+}
+
+.navbar{
+    font-size: 2em;
+}
+
+.descripcion{
+    font-size: 2em;
+}
+
+section h1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.sobre-nosotros{
+    font-size: 2em;
+}
+
+.experiencias{
+    font-size: 2em;
+}
+
+.contacto{
+    font-size: 2em;
 }
 
 .team-member img {
@@ -43,6 +70,6 @@ footer {
     padding: 1em;
     text-align: center;
     margin-top: auto;
-    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
     color: white;
 }
